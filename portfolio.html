@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joel Bermudez Web Site</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;700&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<script src="https://use.fontawesome.com/3a63dda505.js"></script>
+</head>
+<body>
+       <!-- ------------header--------------- -->
+   <section class="header">
+    <nav>
+        <a href="index.html"><img src="images/logo.png" alt=""></a>
+            <div class="nav-links" id="nav.links">
+                <span class="material-icons icon" onclick="hideMenu()">close</span>
+               <ul>
+                    <li><a href="./index.html">HOME</a></li>
+                    <li><a href="./about.html">ABOUT ME</a></li>
+                    <li><a href="./portfolio.html">PORTFOLIO</a></li>
+                    <li><a href="./contact.html">CONTACT</a></li>     
+               </ul>
+           </div>
+              <span class="material-icons icon" onclick="showMenu()">menu</span>
+       </nav>
+       
+       </div>  
+
+       <section class="course"> 
+        <h2>PORTFOLIO</h2>
+       <p>Below you can see some projects I've been working on lately. I divide each project into four follow-up areas: comprehensive research, wireframing, design & development. This process allows me to create great product with client goals in mind.</p>
+       <div class="row">
+            <div class="portfolio-col">
+                    <h3>RESEARCH</h3>
+                    <p>01. Understand the client’s subject matter completely and build on the knowledge related to it, becoming intimately familiar with the subject matter. Determine methods to address the specific customer’s needs and requirements.</p><br><br>
+                    
+                </div>
+    
+            <div class="portfolio-col">
+                    <h3>DESING</h3>
+                    <p>02. Misleadingly thought of as the superficial appearance of a product, design actually encompasses a lot more. It is a cross functional process that includes market research, technical research, design of a concept, and prototype mockup.</p>                    
+                    
+                </div>
+    
+            <div class="portfolio-col">
+                    <h3>DEVELOP</h3>
+                    <p>03. Findings from the research and design phases are utilized for the production of specific products including materials, systems, and methods. Engineer utilizing the research and designs to produce commercial products for the customer.</p>
+                 </div>                                                 
+      </div>
+
+    </section>
+    <!-- -----------java for toggle menu---------- -->
+   <script>
+    var navlinks = document.getElementById("nav.links");
+    function showMenu(){
+        navlinks.style.right = "0"
+
+    }
+    function hideMenu(){
+        navlinks.style.right = "-200px"
+
+    }
+    </script>
+
+    <section class="video">
+        <iframe width="560" height="315" src="http://www.youtube.com/embed/FfxTkIsaTYk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
+
+    <!-- ------------FOOTER--------------- -->
+    <section class="footer">
+        <h1>LET'S TALK</h1>
+        <P>If you like my work and have some cool project to work on, just send me direct message or contact me through social sites listed below.</P>
+        
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+    
+        <p>Made with <span class="material-icons">favorite_border</span> by Joel Bermudez</p>
+    
+    </section>  

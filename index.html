@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joel Bermudez Web Site</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;700&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<script src="https://use.fontawesome.com/3a63dda505.js"></script>
+
+</head>
+<body>
+    <!-- ------------header--------------- -->
+   <section class="header">
+    <nav>
+        <a href="index.html"><img src="images/logo.png" alt=""></a>
+            <div class="nav-links" id="nav.links">
+                <span class="material-icons icon" onclick="hideMenu()">close</span>
+               <ul>
+                   <li><a href="./index.html">HOME</a></li>
+                   <li><a href="./about.html">ABOUT ME</a></li>
+                   <li><a href="./portfolio.html">PORTFOLIO</a></li>
+                   <li><a href="./contact.html">CONTACT</a></li>                   
+               </ul>
+           </div>
+              <span class="material-icons icon" onclick="showMenu()">menu</span>
+       </nav>
+       
+       
+       </div>
+       
+    <div class="text-box">         
+        <h1>Hello, I'm Joel Bermudez Quiroga.</h1>
+        <p>I'm a full-stack developer</p>
+        <a href="./about.html" class="hero-btn" >Click here to know me more</a>
+    </div>
+    </section>
+
+    <!-- <video autoplay loop muted class="back-video">
+        <source src="images/video.mp4" type="video/mp4">
+    </video> -->
+<!-- -----------java for toggle menu---------- -->
+   <script>
+       var navlinks = document.getElementById("nav.links");
+       function showMenu(){
+           navlinks.style.right = "0"
+
+       }
+       function hideMenu(){
+           navlinks.style.right = "-200px"
+
+       }
+
+   </script>
+   <!-- ------------FOOTER--------------- -->
+
+<section class="footer">
+    <h1>LET'S TALK</h1>
+    <P>If you like my work and have some cool project to work on, just send me direct message or contact me through social sites listed below.</P>
+    
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+    </div>
+
+    <p>Made with <span class="material-icons">favorite_border</span> by Joel Bermudez</p>
+
+</section>  
+
+
+</body>
+</html>
